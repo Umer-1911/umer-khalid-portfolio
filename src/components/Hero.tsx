@@ -115,7 +115,7 @@ export default function Hero() {
               {/* Profile Image Container */}
               <div className="absolute inset-0 rounded-[40px] overflow-hidden border border-white/10 glass rotate-3 hover:rotate-0 transition-transform duration-500">
                 <img
-                  src="src/components/assets/Profile.jpeg"
+                  src="/Profile.jpeg"
                   alt={PERSONAL_INFO.name}
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                   referrerPolicy="no-referrer"

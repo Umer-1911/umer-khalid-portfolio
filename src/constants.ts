@@ -6,7 +6,7 @@ export const PERSONAL_INFO = {
   tagline: "Building fast, scalable, and user friendly web applications",
   location: "Karachi, Pakistan",
   email: "umerkhalid1911@gmail.com",
-  resumeUrl: "Public\\resume.pdf", // Path to the resume file in the public folder
+  resumeUrl: "/resume.pdf", // Path to the resume file in the public folder
   summary: "Final year Computer Networks & Security student with full stack development experience across React.js, Node.js, and PostgreSQL, plus enterprise ERP development as a SAPUI5 Developer Intern. Independently designed, built, and deployed multiple production web applications, including a real world ecommerce ordering platform and an AI powered document processing tool on Microsoft Azure.",
 };
 
