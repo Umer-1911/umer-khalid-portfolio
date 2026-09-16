@@ -20,7 +20,7 @@ export default function Footer() {
               <span className="text-accent">.</span>
             </motion.a>
             <p className="text-white/40 text-sm max-w-xs leading-relaxed">
-              Junior Frontend Developer building modern, responsive, and high-performance web applications.
+              Full Stack Developer building modern, responsive, and high performance web applications.
             </p>
           </div>
 

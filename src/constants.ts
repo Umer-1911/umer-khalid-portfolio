@@ -1,20 +1,18 @@
-import { Github, Linkedin, Instagram, Facebook, Code, Cloud, Layout, Database, Server, GitBranch, Globe } from 'lucide-react';
+import { Github, Linkedin, Code, Cloud, Layout, Database, Server, GitBranch, Globe } from 'lucide-react';
 
 export const PERSONAL_INFO = {
   name: "Umer Khalid",
-  title: "Junior Frontend Developer",
-  tagline: "Building fast, scalable, and user-friendly web applications",
+  title: "Full Stack Developer",
+  tagline: "Building fast, scalable, and user friendly web applications",
   location: "Karachi, Pakistan",
   email: "umerkhalid1911@gmail.com",
-  resumeUrl: "/resume.pdf", // Path to the resume file in the public folder
-  summary: "Junior Frontend Developer with hands-on experience building and deploying web applications using React.js and modern JavaScript. Familiar with REST APIs, authentication flows, and cloud services like Microsoft Azure. Passionate about creating clean UI, solving real problems, and continuously improving as a developer.",
+  resumeUrl: "src\\components\\Public\\resume.pdf", // Path to the resume file in the public folder
+  summary: "Final year Computer Networks & Security student with full stack development experience across React.js, Node.js, and PostgreSQL, plus enterprise ERP development as a SAPUI5 Developer Intern. Independently designed, built, and deployed multiple production web applications, including a real world ecommerce ordering platform and an AI powered document processing tool on Microsoft Azure.",
 };
 
 export const SOCIAL_LINKS = [
   { name: 'LinkedIn', url: 'https://www.linkedin.com/in/umer-khalid-033117253', icon: Linkedin },
   { name: 'GitHub', url: 'https://github.com/Umer-1911', icon: Github },
-  { name: 'Instagram', url: 'https://www.instagram.com/umertechofficial/', icon: Instagram },
-  { name: 'Facebook', url: 'https://www.facebook.com/umer.khalid.957782/', icon: Facebook },
 ];
 
 export const NAV_LINKS = [
@@ -27,17 +25,15 @@ export const NAV_LINKS = [
 ];
 
 export const STATS = [
-  { label: 'Projects Completed', value: 1, suffix: '+' },
+  { label: 'Projects Shipped', value: 3, suffix: '' },
   { label: 'Experience', value: 1, suffix: ' year' },
   { label: 'Technologies', value: 8, suffix: '+' },
-  { label: 'GitHub Contributions', value: 250, suffix: '+' },
-  { label: 'LinkedIn Followers', value: 500, suffix: '+' },
 ];
 
 export const SERVICES = [
   {
-    title: "Frontend Development",
-    description: "Building responsive and interactive user interfaces using React, Tailwind CSS, and modern JavaScript.",
+    title: "Full Stack Development",
+    description: "Full stack development experience across React.js, Node.js, and PostgreSQL plus enterprise ERP development as a SAPUI5 Developer as an intern.",
     icon: Layout,
   },
   {
@@ -77,11 +73,27 @@ export const SKILLS = {
 export const PROJECTS = [
   {
     title: "AI Resume Analyzer",
-    description: "AI-powered web app that analyzes resumes uploaded as PDFs and extracts structured data such as skills, education, and experience.",
+    description: "AI powered web app that analyzes resumes uploaded as PDFs and extracts structured data such as skills, education, and experience.",
     tech: ["React.js", "Tailwind CSS", "Firebase Auth", "Azure Functions", "Azure Document Intelligence"],
-    image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&q=80&w=800",
+    image: "src\\components\\assets\\localhost_5173.png",
     liveUrl: "#",
-    githubUrl: "https://github.com/Umer-1911",
+    githubUrl: "https://github.com/Umer-1911/recruitx.ai",
+  },
+  {
+    title: "Pizza Run",
+    description: "Responsive ecommerce ordering platform for local businesses with real time cart state and WhatsApp based checkout notifications.",
+    tech: ["React.js", "Tailwind CSS", "WhatsApp API", "Vercel"],
+    image: "src\\components\\assets\\Pizza_Run.png",
+    liveUrl: "https://pizzarun-whatsapp-ordering-system.vercel.app/",
+    githubUrl: "https://github.com/Umer-1911/pizzarun-whatsapp-ordering-system",
+  },
+  {
+    title: "DevFlow Dashboard",
+    description: "Interactive dashboard UI with reusable components and a focus on responsive, clean design.",
+    tech: ["React.js", "Tailwind CSS"],
+    image: "src\\components\\assets\\devflow-dashboard.png",
+    liveUrl: "https://umer-1911.github.io/devflow-dashboard/",
+    githubUrl: "https://github.com/Umer-1911/devflow-dashboard",
   },
 ];
 
@@ -91,11 +103,10 @@ export const EXPERIENCE = [
     company: "iSoftMart Solutions",
     period: "May 2025 – Aug 2025",
     description: [
-      "Built ERP UI modules using SAPUI5",
-      "Developed form-based data entry pages",
-      "Integrated notification module with PostgreSQL",
-      "Implemented multilingual support using i18n",
-      "Improved UI responsiveness and data binding",
+      "Built and maintained responsive SAPUI5 UI components for ERP modules used in daily business operations",
+      "Designed form based data entry interfaces to streamline internal workflows",
+      "Integrated frontend views with a PostgreSQL backend, improving data binding performance and reducing UI lag",
+      "Collaborated directly with senior developers to debug production issues and refine user experience",
     ],
   },
   {
@@ -103,9 +114,7 @@ export const EXPERIENCE = [
     company: "Artex Digital",
     period: "Dec 2023 – Feb 2025",
     description: [
-      "Client acquisition and negotiations",
-      "Led sales team to achieve targets",
-      "Delivered tailored digital solutions",
+      "Liaised with clients to scope requirements and translate them into digital solutions, strengthening client facing communication skills relevant to technical requirement gathering",
     ],
   },
 ];

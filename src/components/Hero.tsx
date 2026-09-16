@@ -85,52 +85,63 @@ export default function Hero() {
               <span>View Projects</span>
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </motion.a>
+
+            <motion.a
+              href="src\components\Public\resume.pdf"
+              download
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-8 py-4 glass border border-white/10 text-white font-bold rounded-2xl flex items-center space-x-2"
+            >
+              <Download size={20} />
+              <span>Resume</span>
+            </motion.a>
           </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {STATS.slice(0, 3).map((stat) => (
               <Counter key={stat.label} value={stat.value} suffix={stat.suffix} label={stat.label} />
             ))}
           </div>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-          className="relative hidden lg:block"
-        >
-          <div className="relative w-[500px] h-[500px] mx-auto">
-            {/* Profile Image Container */}
-            <div className="absolute inset-0 rounded-[40px] overflow-hidden border border-white/10 glass rotate-3 hover:rotate-0 transition-transform duration-500">
-              <img
-                src="https://picsum.photos/seed/umer/800/800"
-                alt={PERSONAL_INFO.name}
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-                referrerPolicy="no-referrer"
-              />
-            </div>
-            {/* Decorative Elements */}
-            <div className="absolute -top-6 -right-6 w-32 h-32 glass rounded-3xl -rotate-6 flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-accent">1+</div>
-                <div className="text-[10px] uppercase tracking-widest opacity-50">Years Exp.</div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="relative hidden lg:block"
+          >
+            <div className="relative w-[500px] h-[500px] mx-auto">
+              {/* Profile Image Container */}
+              <div className="absolute inset-0 rounded-[40px] overflow-hidden border border-white/10 glass rotate-3 hover:rotate-0 transition-transform duration-500">
+                <img
+                  src="src/components/assets/WhatsApp Image .jpeg"
+                  alt={PERSONAL_INFO.name}
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                  referrerPolicy="no-referrer"
+                />
               </div>
-            </div>
-            <div className="absolute -bottom-6 -left-6 w-40 h-40 glass rounded-3xl rotate-12 flex items-center justify-center p-4">
-              <div className="text-center">
-                <div className="text-sm font-medium opacity-70 mb-2">Top Skills</div>
-                <div className="flex flex-wrap justify-center gap-1">
-                  {['React', 'Azure', 'Tailwind'].map(s => (
-                    <span key={s} className="text-[10px] px-2 py-0.5 bg-accent/20 text-accent rounded-full border border-accent/30">
-                      {s}
-                    </span>
-                  ))}
+              {/* Decorative Elements */}
+              <div className="absolute -top-6 -right-6 w-32 h-32 glass rounded-3xl -rotate-6 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-accent">1</div>
+                  <div className="text-[10px] uppercase tracking-widest opacity-50">Years Exp.</div>
+                </div>
+              </div>
+              <div className="absolute -bottom-6 -left-6 w-40 h-40 glass rounded-3xl rotate-12 flex items-center justify-center p-4">
+                <div className="text-center">
+                  <div className="text-sm font-medium opacity-70 mb-2">Top Skills</div>
+                  <div className="flex flex-wrap justify-center gap-1">
+                    {['React', 'Azure', 'Tailwind'].map(s => (
+                      <span key={s} className="text-[10px] px-2 py-0.5 bg-accent/20 text-accent rounded-full border border-accent/30">
+                        {s}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
       </div>
 
       {/* Scroll Indicator */}
