@@ -6,7 +6,7 @@ export const PERSONAL_INFO = {
   tagline: "Building fast, scalable, and user friendly web applications",
   location: "Karachi, Pakistan",
   email: "umerkhalid1911@gmail.com",
-  resumeUrl: "src\\components\\Public\\resume.pdf", // Path to the resume file in the public folder
+  resumeUrl: "Public\\resume.pdf", // Path to the resume file in the public folder
   summary: "Final year Computer Networks & Security student with full stack development experience across React.js, Node.js, and PostgreSQL, plus enterprise ERP development as a SAPUI5 Developer Intern. Independently designed, built, and deployed multiple production web applications, including a real world ecommerce ordering platform and an AI powered document processing tool on Microsoft Azure.",
 };
 
@@ -75,7 +75,7 @@ export const PROJECTS = [
     title: "AI Resume Analyzer",
     description: "AI powered web app that analyzes resumes uploaded as PDFs and extracts structured data such as skills, education, and experience.",
     tech: ["React.js", "Tailwind CSS", "Firebase Auth", "Azure Functions", "Azure Document Intelligence"],
-    image: "src\\components\\assets\\localhost_5173.png",
+    image: "/localhost_5173.png",
     liveUrl: "#",
     githubUrl: "https://github.com/Umer-1911/recruitx.ai",
   },
@@ -83,7 +83,7 @@ export const PROJECTS = [
     title: "Pizza Run",
     description: "Responsive ecommerce ordering platform for local businesses with real time cart state and WhatsApp based checkout notifications.",
     tech: ["React.js", "Tailwind CSS", "WhatsApp API", "Vercel"],
-    image: "src\\components\\assets\\Pizza_Run.png",
+    image: "/Pizza_Run.png",
     liveUrl: "https://pizzarun-whatsapp-ordering-system.vercel.app/",
     githubUrl: "https://github.com/Umer-1911/pizzarun-whatsapp-ordering-system",
   },
@@ -91,7 +91,7 @@ export const PROJECTS = [
     title: "DevFlow Dashboard",
     description: "Interactive dashboard UI with reusable components and a focus on responsive, clean design.",
     tech: ["React.js", "Tailwind CSS"],
-    image: "src\\components\\assets\\devflow-dashboard.png",
+    image: "/devflow-dashboard.png",
     liveUrl: "https://umer-1911.github.io/devflow-dashboard/",
     githubUrl: "https://github.com/Umer-1911/devflow-dashboard",
   },
